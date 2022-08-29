@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'dummy_data.dart';
-import 'category_item.dart';
+import '../dummy_data.dart';
+import '../widgets/category_item.dart';
 
 class CategoryScreen extends StatelessWidget {
 
@@ -12,7 +12,7 @@ class CategoryScreen extends StatelessWidget {
           padding: const EdgeInsets.all(10),
           gridDelegate:
               const SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 200),
-          children: DUMMY_CATEGORIES.map((e) => CatItme(e.title, e.color)).toList()),
+          children: DUMMY_CATEGORIES.map((e) => CatItme(e.title, e.color, e.id)).toList()),
     );
   }
 }
