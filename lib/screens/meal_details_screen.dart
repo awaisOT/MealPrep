@@ -37,7 +37,7 @@ class MealDetailsScreen extends StatelessWidget {
                     border: Border.all(
                       width: 2,
                     ),
-                    borderRadius: BorderRadius.all(Radius.circular(20))),
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
                 
                 height: 150,
                 width: 200,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './drawer.dart';
 import 'package:mealprep/screens/category_screen.dart';
 import 'package:mealprep/screens/favourites_screen.dart';
 
@@ -28,6 +29,7 @@ List <Widget> pages=[
       appBar: AppBar(
         title: const Text('Meal Prep'),
       ),
+      drawer: DrawerScreen(),
       body: pages[currentindex],
       bottomNavigationBar: BottomNavigationBar(
         items: const [
